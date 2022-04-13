@@ -1,0 +1,266 @@
+2021/12/07 11:06:14.328257 INFO Daemon Azure Linux Agent Version:2.2.45
+2021/12/07 11:06:14.335625 INFO Daemon OS: ubuntu 18.04
+2021/12/07 11:06:14.342725 INFO Daemon Python: 3.6.9
+2021/12/07 11:06:14.350316 INFO Daemon CGroups Status: The cgroup filesystem is ready to use
+2021/12/07 11:06:14.365374 INFO Daemon Run daemon
+2021/12/07 11:06:14.394642 INFO Daemon cloud-init is enabled: True
+2021/12/07 11:06:14.410429 INFO Daemon Using cloud-init for provisioning
+2021/12/07 11:06:14.418991 INFO Daemon Clean protocol
+2021/12/07 11:06:14.422931 INFO Daemon Running CloudInit provisioning handler
+2021/12/07 11:06:14.431390 INFO Daemon Detect protocol endpoints
+2021/12/07 11:06:14.441519 INFO Daemon Clean protocol
+2021/12/07 11:06:14.446381 INFO Daemon WireServer endpoint is not found. Rerun dhcp handler
+2021/12/07 11:06:14.457892 INFO Daemon Test for route to 168.63.129.16
+2021/12/07 11:06:14.462180 INFO Daemon Route to 168.63.129.16 exists
+2021/12/07 11:06:14.466774 INFO Daemon Wire server endpoint:168.63.129.16
+2021/12/07 11:06:14.489130 INFO Daemon Fabric preferred wire protocol version:2015-04-05
+2021/12/07 11:06:14.497723 INFO Daemon Wire protocol version:2012-11-30
+2021/12/07 11:06:14.516933 INFO Daemon Server preferred version:2015-04-05
+2021/12/07 11:06:14.748430 INFO Daemon ssh host key found at: /etc/ssh/ssh_host_rsa_key.pub
+2021/12/07 11:06:14.767725 INFO Daemon Thumbprint obtained from : /etc/ssh/ssh_host_rsa_key.pub
+2021/12/07 11:06:14.777580 INFO Daemon Finished provisioning
+2021/12/07 11:06:15.800517 INFO Daemon RDMA capabilities are not enabled, skipping
+2021/12/07 11:06:15.807582 INFO Daemon Installed Agent WALinuxAgent-2.2.45 is the most current agent
+2021/12/07 11:06:16.034719 INFO ExtHandler Agent WALinuxAgent-2.2.45 is running as the goal state agent
+2021/12/07 11:06:16.042806 INFO ExtHandler Distro info: ubuntu 18.04, osutil class being used: Ubuntu18OSUtil, agent service name: walinuxagent
+2021/12/07 11:06:16.053782 INFO ExtHandler Wire server endpoint:168.63.129.16
+2021/12/07 11:06:16.084219 INFO ExtHandler Start env monitor service.
+2021/12/07 11:06:16.090857 INFO ExtHandler Configure routes
+2021/12/07 11:06:16.099664 INFO ExtHandler Gateway:None
+2021/12/07 11:06:16.103956 INFO ExtHandler Routes:None
+2021/12/07 11:06:16.108139 INFO ExtHandler Hostname record does not exist, creating [/var/lib/waagent/published_hostname] with hostname [grafana-vm]
+2021/12/07 11:06:16.140485 INFO ExtHandler WALinuxAgent-2.2.45 running as process 1173
+2021/12/07 11:06:16.146857 INFO ExtHandler Wire server endpoint:168.63.129.16
+2021/12/07 11:06:16.160246 INFO ExtHandler CGroups Status: The cgroup filesystem is ready to use
+2021/12/07 11:06:16.179639 INFO ExtHandler Started tracking new cgroup: walinuxagent.service, path: /sys/fs/cgroup/cpu/system.slice/walinuxagent.service
+2021/12/07 11:06:16.202875 INFO ExtHandler Started tracking new cgroup: walinuxagent.service, path: /sys/fs/cgroup/memory/system.slice/walinuxagent.service
+2021/12/07 11:06:16.227915 INFO ExtHandler Route table: [{"Iface": "eth0", "Destination": "0.0.0.0", "Gateway": "10.0.0.1", "Mask": "0.0.0.0", "Flags": "0x0003", "Metric": "100"},{"Iface": "eth0", "Destination": "10.0.0.0", "Gateway": "0.0.0.0", "Mask": "255.255.255.0", "Flags": "0x0001", "Metric": "0"},{"Iface": "eth0", "Destination": "168.63.129.16", "Gateway": "10.0.0.1", "Mask": "255.255.255.255", "Flags": "0x0007", "Metric": "100"},{"Iface": "eth0", "Destination": "169.254.169.254", "Gateway": "10.0.0.1", "Mask": "255.255.255.255", "Flags": "0x0007", "Metric": "100"}]
+2021/12/07 11:06:16.394846 INFO ExtHandler Initial NIC state: [{ "name": "lo", "link": "<LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN mode DEFAULT group default qlen 1000\    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00" }, { "name": "eth0", "link": "<BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP mode DEFAULT group default qlen 1000\    link/ether 60:45:bd:87:66:71 brd ff:ff:ff:ff:ff:ff" }]
+2021/12/07 11:06:16.430514 INFO ExtHandler Successfully added Azure fabric firewall rules
+2021/12/07 11:06:16.454903 INFO ExtHandler Firewall rules:
+Chain INPUT (policy ACCEPT 0 packets, 0 bytes)
+    pkts      bytes target     prot opt in     out     source               destination         
+
+Chain FORWARD (policy ACCEPT 0 packets, 0 bytes)
+    pkts      bytes target     prot opt in     out     source               destination         
+
+Chain OUTPUT (policy ACCEPT 0 packets, 0 bytes)
+    pkts      bytes target     prot opt in     out     source               destination         
+       0        0 ACCEPT     tcp  --  *      *       0.0.0.0/0            168.63.129.16        owner UID match 0
+       0        0 DROP       tcp  --  *      *       0.0.0.0/0            168.63.129.16        ctstate INVALID,NEW
+
+2021/12/07 11:06:16.547702 INFO ExtHandler Set block dev timeout: sdb with timeout: 300
+2021/12/07 11:06:16.558788 INFO ExtHandler Set block dev timeout: sda with timeout: 300
+2021/12/07 11:06:16.623394 INFO ExtHandler Created slice for walinuxagent extensions system-walinuxagent.extensions.slice
+2021/12/07 11:06:16.672167 INFO ExtHandler Wire server endpoint:168.63.129.16
+2021/12/07 11:06:17.073673 INFO ExtHandler Agent WALinuxAgent-2.2.45 discovered update WALinuxAgent-2.5.0.2 -- exiting
+2021/12/07 11:06:17.831171 INFO Daemon Agent WALinuxAgent-2.2.45 launched with command 'python3 -u /usr/sbin/waagent -run-exthandlers' is successfully running
+2021/12/07 11:06:17.851375 INFO Daemon Determined Agent WALinuxAgent-2.5.0.2 to be the latest agent
+2021-12-07T11:06:18.196313Z INFO ExtHandler ExtHandler The agent will now check for updates and then will process extensions. Output to /dev/console will be suspended during those operations.
+2021-12-07T11:06:18.415348Z INFO ExtHandler ExtHandler Agent WALinuxAgent-2.5.0.2 is running as the goal state agent
+2021-12-07T11:06:18.415988Z INFO ExtHandler ExtHandler WireServer endpoint 168.63.129.16 read from file
+2021-12-07T11:06:18.416373Z INFO ExtHandler ExtHandler Wire server endpoint:168.63.129.16
+2021-12-07T11:06:18.431163Z INFO ExtHandler ExtHandler Fetching new goal state [incarnation 2 (force update)]
+2021-12-07T11:06:18.574154Z INFO ExtHandler ExtHandler Found private key matching thumbprint 8B974C0763C681FB6055B63245756E25BAEE079D
+2021-12-07T11:06:18.579729Z INFO ExtHandler ExtHandler Fetch goal state completed
+2021-12-07T11:06:18.602617Z INFO ExtHandler ExtHandler Distro: ubuntu-18.04; OSUtil: Ubuntu18OSUtil; AgentService: walinuxagent; Python: 3.6.9; systemd: True; LISDrivers: Failed; logrotate: ;
+2021-12-07T11:06:18.610956Z INFO ExtHandler ExtHandler WALinuxAgent-2.5.0.2 running as process 1305
+2021-12-07T11:06:18.617854Z INFO ExtHandler ExtHandler [CGI] systemd version: systemd 237
++PAM +AUDIT +SELINUX +IMA +APPARMOR +SMACK +SYSVINIT +UTMP +LIBCRYPTSETUP +GCRYPT +GNUTLS +ACL +XZ +LZ4 +SECCOMP +BLKID +ELFUTILS +KMOD -IDN2 +IDN -PCRE2 default-hierarchy=hybrid
+
+2021-12-07T11:06:18.630382Z INFO ExtHandler ExtHandler [CGI] Removed /etc/systemd/system/system-walinuxagent.extensions.slice
+2021-12-07T11:06:18.631955Z INFO ExtHandler ExtHandler [CGI] Created /lib/systemd/system/azure.slice
+2021-12-07T11:06:18.632745Z INFO ExtHandler ExtHandler [CGI] Created /lib/systemd/system/azure-vmextensions.slice
+2021-12-07T11:06:18.633363Z INFO ExtHandler ExtHandler [CGI] Created /lib/systemd/system/azure-walinuxagent-logcollector.slice
+2021-12-07T11:06:18.634138Z INFO ExtHandler ExtHandler [CGI] Created /lib/systemd/system/walinuxagent.service.d/10-Slice.conf
+2021-12-07T11:06:18.634746Z INFO ExtHandler ExtHandler [CGI] Created /lib/systemd/system/walinuxagent.service.d/11-CPUAccounting.conf
+2021-12-07T11:06:18.635299Z INFO ExtHandler ExtHandler Executing systemctl daemon-reload...
+2021-12-07T11:06:18.900983Z INFO ExtHandler ExtHandler The CPU cgroup controller is mounted at /sys/fs/cgroup/cpu,cpuacct
+2021-12-07T11:06:18.901646Z INFO ExtHandler ExtHandler The memory cgroup controller is mounted at /sys/fs/cgroup/memory
+2021-12-07T11:06:18.915752Z INFO ExtHandler ExtHandler [CGI] cgroups v2 mounted at /sys/fs/cgroup/unified.  Controllers: []
+2021-12-07T11:06:18.938755Z INFO ExtHandler ExtHandler [CGI] CPUAccounting: yes
+2021-12-07T11:06:18.958148Z INFO ExtHandler ExtHandler [CGI] CPUQuota: infinity
+2021-12-07T11:06:18.959643Z INFO ExtHandler ExtHandler [CGI] The Agent is not in the expected memory cgroup; will not enable monitoring. CGroup:[None] Expected:[system.slice/walinuxagent.service]
+2021-12-07T11:06:18.960708Z INFO ExtHandler ExtHandler [CGI] Agent CPU cgroup: /sys/fs/cgroup/cpu,cpuacct/system.slice/walinuxagent.service
+2021-12-07T11:06:18.961277Z INFO ExtHandler ExtHandler [CGI] Ensuring the agent's CPUQuota is 100%
+2021-12-07T11:06:18.962612Z INFO ExtHandler ExtHandler [CGI] Created /lib/systemd/system/walinuxagent.service.d/12-CPUQuota.conf
+2021-12-07T11:06:18.963313Z INFO ExtHandler ExtHandler Executing systemctl daemon-reload...
+2021-12-07T11:06:19.218388Z INFO ExtHandler ExtHandler Started tracking cgroup walinuxagent.service [/sys/fs/cgroup/cpu,cpuacct/system.slice/walinuxagent.service]
+2021-12-07T11:06:19.221146Z INFO ExtHandler ExtHandler [CGI] Cgroups enabled: True
+2021-12-07T11:06:19.222768Z INFO ExtHandler ExtHandler Starting setup for Persistent firewall rules
+2021-12-07T11:06:19.230496Z INFO ExtHandler ExtHandler Firewalld service not running/unavailable, trying to set up walinuxagent-network-setup.service
+2021-12-07T11:06:19.231138Z INFO ExtHandler ExtHandler Successfully updated the Binary file /var/lib/waagent/waagent-network-setup.py for firewall setup
+2021-12-07T11:06:19.239882Z INFO ExtHandler ExtHandler Service: walinuxagent-network-setup.service not enabled. Adding it now
+2021-12-07T11:06:19.510750Z INFO ExtHandler ExtHandler Executing systemctl daemon-reload for setting up walinuxagent-network-setup.service
+2021-12-07T11:06:19.834914Z INFO ExtHandler ExtHandler Successfully added and enabled the walinuxagent-network-setup.service
+2021-12-07T11:06:19.836141Z INFO ExtHandler ExtHandler Persistent firewall rules setup successfully
+2021-12-07T11:06:19.837378Z INFO ExtHandler ExtHandler Checking if log collection is allowed at this time [False]. All three conditions must be met: configuration enabled [False], cgroups enabled [True], python supported: [True]
+2021-12-07T11:06:19.838574Z INFO ExtHandler ExtHandler Starting env monitor service.
+2021-12-07T11:06:19.842743Z INFO MonitorHandler ExtHandler WireServer endpoint 168.63.129.16 read from file
+2021-12-07T11:06:19.843062Z INFO MonitorHandler ExtHandler Wire server endpoint:168.63.129.16
+2021-12-07T11:06:19.843633Z INFO MonitorHandler ExtHandler Monitor.NetworkConfigurationChanges is disabled.
+2021-12-07T11:06:19.845275Z INFO ExtHandler ExtHandler Start SendTelemetryHandler service.
+2021-12-07T11:06:19.846126Z INFO EnvHandler ExtHandler WireServer endpoint 168.63.129.16 read from file
+2021-12-07T11:06:19.844013Z INFO MonitorHandler ExtHandler Routing table from /proc/net/route:
+Iface	Destination	Gateway 	Flags	RefCnt	Use	Metric	Mask		MTU	Window	IRTT                                                       
+eth0	00000000	0100000A	0003	0	0	100	00000000	0	0	0                                                                             
+eth0	0000000A	00000000	0001	0	0	0	00FFFFFF	0	0	0                                                                               
+eth0	10813FA8	0100000A	0007	0	0	100	FFFFFFFF	0	0	0                                                                             
+eth0	FEA9FEA9	0100000A	0007	0	0	100	FFFFFFFF	0	0	0                                                                             
+
+2021-12-07T11:06:19.846383Z INFO EnvHandler ExtHandler Wire server endpoint:168.63.129.16
+2021-12-07T11:06:19.850279Z INFO EnvHandler ExtHandler Configure routes
+2021-12-07T11:06:19.852990Z INFO ExtHandler ExtHandler Start Extension Telemetry service.
+2021-12-07T11:06:19.852723Z INFO SendTelemetryHandler ExtHandler Successfully started the SendTelemetryHandler thread
+2021-12-07T11:06:19.867531Z INFO TelemetryEventsCollector ExtHandler Extension Telemetry pipeline enabled: True
+2021-12-07T11:06:19.867934Z INFO ExtHandler ExtHandler Goal State Period: 6 sec. This indicates how often the agent checks for new goal states and reports status.
+2021-12-07T11:06:19.870915Z INFO TelemetryEventsCollector ExtHandler Successfully started the TelemetryEventsCollector thread
+2021-12-07T11:06:19.861698Z INFO EnvHandler ExtHandler Gateway:None
+2021-12-07T11:06:19.877975Z INFO ExtHandler ExtHandler Checking for agent updates (family: Prod)
+2021-12-07T11:06:19.886608Z INFO EnvHandler ExtHandler Routes:None
+2021-12-07T11:06:19.910185Z INFO MonitorHandler ExtHandler Network interfaces:
+Executing ['ip', '-a', '-o', 'link']:
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN mode DEFAULT group default qlen 1000\    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP mode DEFAULT group default qlen 1000\    link/ether 60:45:bd:87:66:71 brd ff:ff:ff:ff:ff:ff
+
+Executing ['ip', '-4', '-a', '-o', 'address']:
+1: lo    inet 127.0.0.1/8 scope host lo\       valid_lft forever preferred_lft forever
+2: eth0    inet 10.0.0.4/24 brd 10.0.0.255 scope global eth0\       valid_lft forever preferred_lft forever
+
+Executing ['ip', '-6', '-a', '-o', 'address']:
+1: lo    inet6 ::1/128 scope host \       valid_lft forever preferred_lft forever
+2: eth0    inet6 fe80::6245:bdff:fe87:6671/64 scope link \       valid_lft forever preferred_lft forever
+
+
+2021-12-07T11:06:20.195676Z INFO ExtHandler ExtHandler ProcessExtensionsInGoalState started [Incarnation: 2; Activity Id: 2fc5b0d8-dea2-47d4-ba02-635d6ad1e781; Correlation Id: 101078ff-2c02-4d64-9e3c-73370a8af7f3; GS Creation Time: 2021-12-07T11:06:13.149757Z]
+2021-12-07T11:06:20.242733Z INFO ExtHandler [Microsoft.Azure.Extensions.CustomScript-2.1.6] Target handler state: enabled [incarnation 2]
+2021-12-07T11:06:20.243945Z INFO ExtHandler [Microsoft.Azure.Extensions.CustomScript-2.1.6] [Enable] current handler state is: notinstalled
+2021-12-07T11:06:20.244569Z INFO ExtHandler [Microsoft.Azure.Extensions.CustomScript-2.1.6] Downloading extension package: https://umsam3zbnjzwjqz5bhmh.blob.core.windows.net/5237dd14-0aad-f051-0fad-1e33e1b63091/5237dd14-0aad-f051-0fad-1e33e1b63091_2.1.6.zip
+2021-12-07T11:06:20.411085Z INFO ExtHandler [Microsoft.Azure.Extensions.CustomScript-2.1.6] Unzipping extension package: /var/lib/waagent/Microsoft.Azure.Extensions.CustomScript__2.1.6.zip
+2021-12-07T11:06:20.754898Z INFO ExtHandler [Microsoft.Azure.Extensions.CustomScript-2.1.6] Initializing extension Microsoft.Azure.Extensions.CustomScript-2.1.6
+2021-12-07T11:06:20.756390Z INFO ExtHandler ExtHandler [CGI] Created /lib/systemd/system/azure-vmextensions-Microsoft.Azure.Extensions.CustomScript_2.1.6.slice
+2021-12-07T11:06:20.758341Z INFO ExtHandler [Microsoft.Azure.Extensions.CustomScript-2.1.6] Update settings file: 0.settings
+2021-12-07T11:06:20.762231Z INFO ExtHandler [Microsoft.Azure.Extensions.CustomScript-2.1.6] Install extension [bin/custom-script-shim install]
+2021-12-07T11:06:20.762802Z INFO ExtHandler [Microsoft.Azure.Extensions.CustomScript-2.1.6] Executing command: /var/lib/waagent/Microsoft.Azure.Extensions.CustomScript-2.1.6/bin/custom-script-shim install with environment variables: {"AZURE_GUEST_AGENT_UNINSTALL_CMD_EXIT_CODE": "NOT_RUN", "AZURE_GUEST_AGENT_EXTENSION_PATH": "/var/lib/waagent/Microsoft.Azure.Extensions.CustomScript-2.1.6", "AZURE_GUEST_AGENT_EXTENSION_VERSION": "2.1.6", "AZURE_GUEST_AGENT_WIRE_PROTOCOL_ADDRESS": "168.63.129.16", "ConfigSequenceNumber": "0", "AZURE_GUEST_AGENT_EXTENSION_SUPPORTED_FEATURES": "[{\"Key\": \"ExtensionTelemetryPipeline\", \"Value\": \"1.0\"}]"}
+2021-12-07T11:06:20.770885Z INFO ExtHandler ExtHandler Started extension in unit 'install_75af8459-b386-4d92-8136-f790de8b8dfc.scope'
+2021-12-07T11:06:20.771953Z INFO ExtHandler ExtHandler Started tracking cgroup Microsoft.Azure.Extensions.CustomScript-2.1.6 [/sys/fs/cgroup/cpu,cpuacct/azure.slice/azure-vmextensions.slice/azure-vmextensions-Microsoft.Azure.Extensions.CustomScript_2.1.6.slice]
+2021-12-07T11:06:22.774248Z INFO ExtHandler [Microsoft.Azure.Extensions.CustomScript-2.1.6] Command: bin/custom-script-shim install
+[stdout]
++ /var/lib/waagent/Microsoft.Azure.Extensions.CustomScript-2.1.6/bin/custom-script-extension install
+time=2021-12-07T11:06:20Z version=v2.1.6/git@fc181d8-dirty operation=install seq=0 event=start
+time=2021-12-07T11:06:20Z version=v2.1.6/git@fc181d8-dirty operation=install seq=0 status="not reported for operation (by design)"
+time=2021-12-07T11:06:20Z version=v2.1.6/git@fc181d8-dirty operation=install seq=0 event="migrate to mrseq" error="Can't find out seqnum from /var/lib/waagent/Microsoft.Azure.Extensions.CustomScript-2.1.6/status, not enough files"
+time=2021-12-07T11:06:20Z version=v2.1.6/git@fc181d8-dirty operation=install seq=0 event="created data dir" path=/var/lib/waagent/custom-script
+time=2021-12-07T11:06:20Z version=v2.1.6/git@fc181d8-dirty operation=install seq=0 event=installed
+time=2021-12-07T11:06:20Z version=v2.1.6/git@fc181d8-dirty operation=install seq=0 status="not reported for operation (by design)"
+time=2021-12-07T11:06:20Z version=v2.1.6/git@fc181d8-dirty operation=install seq=0 event=end
+[stderr]
+Running scope as unit: install_75af8459-b386-4d92-8136-f790de8b8dfc.scope
+2021-12-07T11:06:22.775382Z INFO ExtHandler [Microsoft.Azure.Extensions.CustomScript-2.1.6] Requested extension state: enabled
+2021-12-07T11:06:22.775654Z INFO ExtHandler [Microsoft.Azure.Extensions.CustomScript-2.1.6] Enable extension: [bin/custom-script-shim enable]
+2021-12-07T11:06:22.775982Z INFO ExtHandler [Microsoft.Azure.Extensions.CustomScript-2.1.6] Executing command: /var/lib/waagent/Microsoft.Azure.Extensions.CustomScript-2.1.6/bin/custom-script-shim enable with environment variables: {"AZURE_GUEST_AGENT_UNINSTALL_CMD_EXIT_CODE": "NOT_RUN", "AZURE_GUEST_AGENT_EXTENSION_PATH": "/var/lib/waagent/Microsoft.Azure.Extensions.CustomScript-2.1.6", "AZURE_GUEST_AGENT_EXTENSION_VERSION": "2.1.6", "AZURE_GUEST_AGENT_WIRE_PROTOCOL_ADDRESS": "168.63.129.16", "ConfigSequenceNumber": "0", "AZURE_GUEST_AGENT_EXTENSION_SUPPORTED_FEATURES": "[{\"Key\": \"ExtensionTelemetryPipeline\", \"Value\": \"1.0\"}]"}
+2021-12-07T11:06:22.780985Z INFO ExtHandler ExtHandler Started extension in unit 'enable_4316c02a-869a-4610-b6ed-fef789767d45.scope'
+2021-12-07T11:06:24.784632Z INFO ExtHandler [Microsoft.Azure.Extensions.CustomScript-2.1.6] Command: bin/custom-script-shim enable
+[stdout]
+Writing a placeholder status file indicating progress before forking: /var/lib/waagent/Microsoft.Azure.Extensions.CustomScript-2.1.6/status/0.status
++ nohup /var/lib/waagent/Microsoft.Azure.Extensions.CustomScript-2.1.6/bin/custom-script-extension enable
+time=2021-12-07T11:06:22Z version=v2.1.6/git@fc181d8-dirty operation=enable seq=0 event=start
+time=2021-12-07T11:06:22Z version=v2.1.6/git@fc181d8-dirty operation=enable seq=0 event=pre-check
+time=2021-12-07T11:06:22Z version=v2.1.6/git@fc181d8-dirty operation=enable seq=0 event="comparing seqnum" path=mrseq
+time=2021-12-07T11:06:22Z version=v2.1.6/git@fc181d8-dirty operation=enable seq=0 event="seqnum saved" path=mrseq
+time=2021-12-07T11:06:22Z version=v2.1.6/git@fc181d8-dirty operation=enable seq=0 event="reading configuration"
+time=2021-12-07T11:06:22Z version=v2.1.6/git@fc181d8-dirty operation=enable seq=0 event="read configuration"
+time=2021-12-07T11:06:22Z version=v2.1.6/git@fc181d8-dirty operation=enable seq=0 event="validating json schema"
+time=2021-12-07T11:06:22Z version=v2.1.6/git@fc181d8-dirty operation=enable seq=0 event="json schema valid"
+time=2021-12-07T11:06:22Z version=v2.1.6/git@fc181d8-dirty operation=enable seq=0 event="parsing configuration json"
+time=2021-12-07T11:06:22Z version=v2.1.6/git@fc181d8-dirty operation=enable seq=0 event="parsed configuration json"
+time=2021-12-07T11:06:22Z version=v2.1.6/git@fc181d8-dirty operation=enable seq=0 event="validating configuration logically"
+time=2021-12-07T11:06:22Z version=v2.1.6/git@fc181d8-dirty operation=enable seq=0 event="validated configuration"
+time=2021-12-07T11:06:22Z version=v2.1.6/git@fc181d8-dirty operation=enable seq=0 event="creating output directory" path=/var/lib/waagent/custom-script/download/0
+time=2021-12-07T11:06:22Z version=v2.1.6/git@fc181d8-dirty operation=enable seq=0 event="created output directory"
+time=2021-12-07T11:06:22Z version=v2.1.6/git@fc181d8-dirty operation=enable seq=0 files=1
+time=2021-12-07T11:06:22Z version=v2.1.6/git@fc181d8-dirty operation=enable seq=0 file=0 event="download start"
+time=2021-12-07T11:06:23Z version=v2.1.6/git@fc181d8-dirty operation=enable seq=0 file=0 event="download complete" output=/var/lib/waagent/custom-script/download/0
+time=2021-12-07T11:06:23Z version=v2.1.6/git@fc181d8-dirty operation=enable seq=0 event="executing command" output=/var/lib/waagent/custom-script/download/0
+time=2021-12-07T11:06:23Z version=v2.1.6/git@fc181d8-dirty operation=enable seq=0 event="executing protected commandToExecute" output=/var/lib/waagent/custom-script/download/0
+time=2021-12-07T11:06:23Z version=v2.1.6/git@fc181d8-dirty operation=enable seq=0 event="failed to execute command" error="command terminated with exit status=2" output=/var/lib/waagent/custom-script/download/0
+time=2021-12-07T11:06:23Z version=v2.1.6/git@fc181d8-dirty operation=enable seq=0 event="enable failed"
+time=2021-12-07T11:06:23Z version=v2.1.6/git@fc181d8-dirty operation=enable seq=0 event="failed to handle" error="failed to execute command: command terminated with exit status=2"
+[stderr]
+Running scope as unit: enable_4316c02a-869a-4610-b6ed-fef789767d45.scope
+2021-12-07T11:06:24.788871Z INFO ExtHandler ExtHandler ProcessExtensionsInGoalState completed [Incarnation: 2; 4593 ms; Activity Id: 2fc5b0d8-dea2-47d4-ba02-635d6ad1e781; Correlation Id: 101078ff-2c02-4d64-9e3c-73370a8af7f3; GS Creation Time: 2021-12-07T11:06:13.149757Z]
+2021-12-07T11:06:24.821175Z INFO ExtHandler ExtHandler Extension status: [('Microsoft.Azure.Extensions.CustomScript', 'error')]
+2021-12-07T11:06:24.822072Z INFO ExtHandler ExtHandler All extensions in the goal state have reached a terminal state: [('Microsoft.Azure.Extensions.CustomScript', 'error')]
+2021-12-07T11:06:24.822759Z INFO ExtHandler ExtHandler Looking for existing remote access users.
+2021-12-07T11:06:24.831156Z INFO ExtHandler ExtHandler [HEARTBEAT] Agent WALinuxAgent-2.5.0.2 is running as the goal state agent [DEBUG HeartbeatCounter: 0;HeartbeatId: 55EA01D7-82B5-4170-8ACA-4C2498BADCA5;DroppedPackets: 0;UpdateGSErrors: 0;AutoUpdate: 1]
+2021-12-07T11:11:19.958831Z INFO MonitorHandler ExtHandler Stopped tracking cgroup Microsoft.Azure.Extensions.CustomScript-2.1.6 [/sys/fs/cgroup/cpu,cpuacct/azure.slice/azure-vmextensions.slice/azure-vmextensions-Microsoft.Azure.Extensions.CustomScript_2.1.6.slice]
+2021/12/07 11:21:17.871647 INFO Daemon Agent WALinuxAgent-2.5.0.2 launched with command 'python3 -u bin/WALinuxAgent-2.5.0.2-py2.7.egg -run-exthandlers' is successfully running
+2021-12-07T11:36:29.510629Z INFO ExtHandler ExtHandler [HEARTBEAT] Agent WALinuxAgent-2.5.0.2 is running as the goal state agent [DEBUG HeartbeatCounter: 1;HeartbeatId: 55EA01D7-82B5-4170-8ACA-4C2498BADCA5;DroppedPackets: 0;UpdateGSErrors: 0;AutoUpdate: 1]
+2021-12-07T12:06:22.886391Z INFO ExtHandler ExtHandler Checking for agent updates (family: Prod)
+2021-12-07T12:06:34.987880Z INFO ExtHandler ExtHandler [HEARTBEAT] Agent WALinuxAgent-2.5.0.2 is running as the goal state agent [DEBUG HeartbeatCounter: 2;HeartbeatId: 55EA01D7-82B5-4170-8ACA-4C2498BADCA5;DroppedPackets: 0;UpdateGSErrors: 0;AutoUpdate: 1]
+2021-12-07T12:36:40.844119Z INFO ExtHandler ExtHandler [HEARTBEAT] Agent WALinuxAgent-2.5.0.2 is running as the goal state agent [DEBUG HeartbeatCounter: 3;HeartbeatId: 55EA01D7-82B5-4170-8ACA-4C2498BADCA5;DroppedPackets: 0;UpdateGSErrors: 0;AutoUpdate: 1]
+2021-12-07T13:06:28.024590Z INFO ExtHandler ExtHandler Checking for agent updates (family: Prod)
+2021-12-07T13:06:46.110494Z INFO ExtHandler ExtHandler [HEARTBEAT] Agent WALinuxAgent-2.5.0.2 is running as the goal state agent [DEBUG HeartbeatCounter: 4;HeartbeatId: 55EA01D7-82B5-4170-8ACA-4C2498BADCA5;DroppedPackets: 0;UpdateGSErrors: 0;AutoUpdate: 1]
+2021-12-07T13:36:51.356242Z INFO ExtHandler ExtHandler [HEARTBEAT] Agent WALinuxAgent-2.5.0.2 is running as the goal state agent [DEBUG HeartbeatCounter: 5;HeartbeatId: 55EA01D7-82B5-4170-8ACA-4C2498BADCA5;DroppedPackets: 0;UpdateGSErrors: 0;AutoUpdate: 1]
+2021-12-07T14:06:32.060352Z INFO ExtHandler ExtHandler Checking for agent updates (family: Prod)
+2021-12-07T14:06:56.164298Z INFO ExtHandler ExtHandler [HEARTBEAT] Agent WALinuxAgent-2.5.0.2 is running as the goal state agent [DEBUG HeartbeatCounter: 6;HeartbeatId: 55EA01D7-82B5-4170-8ACA-4C2498BADCA5;DroppedPackets: 0;UpdateGSErrors: 0;AutoUpdate: 1]
+2021-12-07T14:37:01.097563Z INFO ExtHandler ExtHandler [HEARTBEAT] Agent WALinuxAgent-2.5.0.2 is running as the goal state agent [DEBUG HeartbeatCounter: 7;HeartbeatId: 55EA01D7-82B5-4170-8ACA-4C2498BADCA5;DroppedPackets: 0;UpdateGSErrors: 0;AutoUpdate: 1]
+2021-12-07T15:06:36.178641Z INFO ExtHandler ExtHandler Checking for agent updates (family: Prod)
+2021-12-07T15:07:06.388885Z INFO ExtHandler ExtHandler [HEARTBEAT] Agent WALinuxAgent-2.5.0.2 is running as the goal state agent [DEBUG HeartbeatCounter: 8;HeartbeatId: 55EA01D7-82B5-4170-8ACA-4C2498BADCA5;DroppedPackets: 0;UpdateGSErrors: 0;AutoUpdate: 1]
+2021-12-07T15:37:11.119568Z INFO ExtHandler ExtHandler [HEARTBEAT] Agent WALinuxAgent-2.5.0.2 is running as the goal state agent [DEBUG HeartbeatCounter: 9;HeartbeatId: 55EA01D7-82B5-4170-8ACA-4C2498BADCA5;DroppedPackets: 0;UpdateGSErrors: 0;AutoUpdate: 1]
+2021-12-07T16:06:39.821733Z INFO ExtHandler ExtHandler Checking for agent updates (family: Prod)
+2021-12-07T16:07:15.945790Z INFO ExtHandler ExtHandler [HEARTBEAT] Agent WALinuxAgent-2.5.0.2 is running as the goal state agent [DEBUG HeartbeatCounter: 10;HeartbeatId: 55EA01D7-82B5-4170-8ACA-4C2498BADCA5;DroppedPackets: 0;UpdateGSErrors: 0;AutoUpdate: 1]
+2021-12-07T16:37:20.831740Z INFO ExtHandler ExtHandler [HEARTBEAT] Agent WALinuxAgent-2.5.0.2 is running as the goal state agent [DEBUG HeartbeatCounter: 11;HeartbeatId: 55EA01D7-82B5-4170-8ACA-4C2498BADCA5;DroppedPackets: 0;UpdateGSErrors: 0;AutoUpdate: 1]
+2021-12-07T17:06:44.659881Z INFO ExtHandler ExtHandler Checking for agent updates (family: Prod)
+2021-12-07T17:07:26.806676Z INFO ExtHandler ExtHandler [HEARTBEAT] Agent WALinuxAgent-2.5.0.2 is running as the goal state agent [DEBUG HeartbeatCounter: 12;HeartbeatId: 55EA01D7-82B5-4170-8ACA-4C2498BADCA5;DroppedPackets: 0;UpdateGSErrors: 0;AutoUpdate: 1]
+2021-12-07T17:37:31.997940Z INFO ExtHandler ExtHandler [HEARTBEAT] Agent WALinuxAgent-2.5.0.2 is running as the goal state agent [DEBUG HeartbeatCounter: 13;HeartbeatId: 55EA01D7-82B5-4170-8ACA-4C2498BADCA5;DroppedPackets: 0;UpdateGSErrors: 0;AutoUpdate: 1]
+2021-12-07T18:06:49.549084Z INFO ExtHandler ExtHandler Checking for agent updates (family: Prod)
+2021-12-07T18:07:37.701923Z INFO ExtHandler ExtHandler [HEARTBEAT] Agent WALinuxAgent-2.5.0.2 is running as the goal state agent [DEBUG HeartbeatCounter: 14;HeartbeatId: 55EA01D7-82B5-4170-8ACA-4C2498BADCA5;DroppedPackets: 0;UpdateGSErrors: 0;AutoUpdate: 1]
+2021-12-07T18:37:42.546779Z INFO ExtHandler ExtHandler [HEARTBEAT] Agent WALinuxAgent-2.5.0.2 is running as the goal state agent [DEBUG HeartbeatCounter: 15;HeartbeatId: 55EA01D7-82B5-4170-8ACA-4C2498BADCA5;DroppedPackets: 0;UpdateGSErrors: 0;AutoUpdate: 1]
+2021-12-07T19:06:53.496546Z INFO ExtHandler ExtHandler Checking for agent updates (family: Prod)
+2021-12-07T19:07:47.662164Z INFO ExtHandler ExtHandler [HEARTBEAT] Agent WALinuxAgent-2.5.0.2 is running as the goal state agent [DEBUG HeartbeatCounter: 16;HeartbeatId: 55EA01D7-82B5-4170-8ACA-4C2498BADCA5;DroppedPackets: 0;UpdateGSErrors: 0;AutoUpdate: 1]
+2021-12-07T19:37:52.486996Z INFO ExtHandler ExtHandler [HEARTBEAT] Agent WALinuxAgent-2.5.0.2 is running as the goal state agent [DEBUG HeartbeatCounter: 17;HeartbeatId: 55EA01D7-82B5-4170-8ACA-4C2498BADCA5;DroppedPackets: 0;UpdateGSErrors: 0;AutoUpdate: 1]
+2021-12-07T20:06:57.518732Z INFO ExtHandler ExtHandler Checking for agent updates (family: Prod)
+2021-12-07T20:07:57.719798Z INFO ExtHandler ExtHandler [HEARTBEAT] Agent WALinuxAgent-2.5.0.2 is running as the goal state agent [DEBUG HeartbeatCounter: 18;HeartbeatId: 55EA01D7-82B5-4170-8ACA-4C2498BADCA5;DroppedPackets: 0;UpdateGSErrors: 0;AutoUpdate: 1]
+2021-12-07T20:38:02.510963Z INFO ExtHandler ExtHandler [HEARTBEAT] Agent WALinuxAgent-2.5.0.2 is running as the goal state agent [DEBUG HeartbeatCounter: 19;HeartbeatId: 55EA01D7-82B5-4170-8ACA-4C2498BADCA5;DroppedPackets: 0;UpdateGSErrors: 0;AutoUpdate: 1]
+2021-12-07T21:07:00.876392Z INFO ExtHandler ExtHandler Checking for agent updates (family: Prod)
+2021-12-07T21:08:07.092797Z INFO ExtHandler ExtHandler [HEARTBEAT] Agent WALinuxAgent-2.5.0.2 is running as the goal state agent [DEBUG HeartbeatCounter: 20;HeartbeatId: 55EA01D7-82B5-4170-8ACA-4C2498BADCA5;DroppedPackets: 0;UpdateGSErrors: 0;AutoUpdate: 1]
+2021-12-07T21:38:11.637428Z INFO ExtHandler ExtHandler [HEARTBEAT] Agent WALinuxAgent-2.5.0.2 is running as the goal state agent [DEBUG HeartbeatCounter: 21;HeartbeatId: 55EA01D7-82B5-4170-8ACA-4C2498BADCA5;DroppedPackets: 0;UpdateGSErrors: 0;AutoUpdate: 1]
+2021-12-07T22:07:04.116663Z INFO ExtHandler ExtHandler Checking for agent updates (family: Prod)
+2021-12-07T22:08:16.344673Z INFO ExtHandler ExtHandler [HEARTBEAT] Agent WALinuxAgent-2.5.0.2 is running as the goal state agent [DEBUG HeartbeatCounter: 22;HeartbeatId: 55EA01D7-82B5-4170-8ACA-4C2498BADCA5;DroppedPackets: 0;UpdateGSErrors: 0;AutoUpdate: 1]
+2021-12-07T22:38:21.686581Z INFO ExtHandler ExtHandler [HEARTBEAT] Agent WALinuxAgent-2.5.0.2 is running as the goal state agent [DEBUG HeartbeatCounter: 23;HeartbeatId: 55EA01D7-82B5-4170-8ACA-4C2498BADCA5;DroppedPackets: 0;UpdateGSErrors: 0;AutoUpdate: 1]
+2021-12-07T23:07:08.744449Z INFO ExtHandler ExtHandler Checking for agent updates (family: Prod)
+2021-12-07T23:08:26.973216Z INFO ExtHandler ExtHandler [HEARTBEAT] Agent WALinuxAgent-2.5.0.2 is running as the goal state agent [DEBUG HeartbeatCounter: 24;HeartbeatId: 55EA01D7-82B5-4170-8ACA-4C2498BADCA5;DroppedPackets: 0;UpdateGSErrors: 0;AutoUpdate: 1]
+2021-12-07T23:38:32.342210Z INFO ExtHandler ExtHandler [HEARTBEAT] Agent WALinuxAgent-2.5.0.2 is running as the goal state agent [DEBUG HeartbeatCounter: 25;HeartbeatId: 55EA01D7-82B5-4170-8ACA-4C2498BADCA5;DroppedPackets: 0;UpdateGSErrors: 0;AutoUpdate: 1]
+2021-12-08T00:07:13.054182Z INFO ExtHandler ExtHandler Checking for agent updates (family: Prod)
+2021-12-08T00:08:37.318606Z INFO ExtHandler ExtHandler [HEARTBEAT] Agent WALinuxAgent-2.5.0.2 is running as the goal state agent [DEBUG HeartbeatCounter: 26;HeartbeatId: 55EA01D7-82B5-4170-8ACA-4C2498BADCA5;DroppedPackets: 0;UpdateGSErrors: 0;AutoUpdate: 1]
+2021-12-08T00:38:42.604459Z INFO ExtHandler ExtHandler [HEARTBEAT] Agent WALinuxAgent-2.5.0.2 is running as the goal state agent [DEBUG HeartbeatCounter: 27;HeartbeatId: 55EA01D7-82B5-4170-8ACA-4C2498BADCA5;DroppedPackets: 0;UpdateGSErrors: 0;AutoUpdate: 1]
+2021-12-08T01:07:17.369478Z INFO ExtHandler ExtHandler Checking for agent updates (family: Prod)
+2021-12-08T01:08:47.629331Z INFO ExtHandler ExtHandler [HEARTBEAT] Agent WALinuxAgent-2.5.0.2 is running as the goal state agent [DEBUG HeartbeatCounter: 28;HeartbeatId: 55EA01D7-82B5-4170-8ACA-4C2498BADCA5;DroppedPackets: 0;UpdateGSErrors: 0;AutoUpdate: 1]
+2021-12-08T01:38:52.688883Z INFO ExtHandler ExtHandler [HEARTBEAT] Agent WALinuxAgent-2.5.0.2 is running as the goal state agent [DEBUG HeartbeatCounter: 29;HeartbeatId: 55EA01D7-82B5-4170-8ACA-4C2498BADCA5;DroppedPackets: 0;UpdateGSErrors: 0;AutoUpdate: 1]
+2021-12-08T02:07:21.323616Z INFO ExtHandler ExtHandler Checking for agent updates (family: Prod)
+2021-12-08T02:08:57.613398Z INFO ExtHandler ExtHandler [HEARTBEAT] Agent WALinuxAgent-2.5.0.2 is running as the goal state agent [DEBUG HeartbeatCounter: 30;HeartbeatId: 55EA01D7-82B5-4170-8ACA-4C2498BADCA5;DroppedPackets: 0;UpdateGSErrors: 0;AutoUpdate: 1]
+2021-12-08T02:39:02.560877Z INFO ExtHandler ExtHandler [HEARTBEAT] Agent WALinuxAgent-2.5.0.2 is running as the goal state agent [DEBUG HeartbeatCounter: 31;HeartbeatId: 55EA01D7-82B5-4170-8ACA-4C2498BADCA5;DroppedPackets: 0;UpdateGSErrors: 0;AutoUpdate: 1]
+2021-12-08T03:07:25.085553Z INFO ExtHandler ExtHandler Checking for agent updates (family: Prod)
+2021-12-08T03:09:07.404215Z INFO ExtHandler ExtHandler [HEARTBEAT] Agent WALinuxAgent-2.5.0.2 is running as the goal state agent [DEBUG HeartbeatCounter: 32;HeartbeatId: 55EA01D7-82B5-4170-8ACA-4C2498BADCA5;DroppedPackets: 0;UpdateGSErrors: 0;AutoUpdate: 1]
+2021-12-08T03:39:12.530122Z INFO ExtHandler ExtHandler [HEARTBEAT] Agent WALinuxAgent-2.5.0.2 is running as the goal state agent [DEBUG HeartbeatCounter: 33;HeartbeatId: 55EA01D7-82B5-4170-8ACA-4C2498BADCA5;DroppedPackets: 0;UpdateGSErrors: 0;AutoUpdate: 1]
+2021-12-08T04:07:29.205751Z INFO ExtHandler ExtHandler Checking for agent updates (family: Prod)
+2021-12-08T04:09:17.510090Z INFO ExtHandler ExtHandler [HEARTBEAT] Agent WALinuxAgent-2.5.0.2 is running as the goal state agent [DEBUG HeartbeatCounter: 34;HeartbeatId: 55EA01D7-82B5-4170-8ACA-4C2498BADCA5;DroppedPackets: 0;UpdateGSErrors: 0;AutoUpdate: 1]
+2021-12-08T04:39:22.649336Z INFO ExtHandler ExtHandler [HEARTBEAT] Agent WALinuxAgent-2.5.0.2 is running as the goal state agent [DEBUG HeartbeatCounter: 35;HeartbeatId: 55EA01D7-82B5-4170-8ACA-4C2498BADCA5;DroppedPackets: 0;UpdateGSErrors: 0;AutoUpdate: 1]
+2021-12-08T05:07:33.167699Z INFO ExtHandler ExtHandler Checking for agent updates (family: Prod)
+2021-12-08T05:09:27.484948Z INFO ExtHandler ExtHandler [HEARTBEAT] Agent WALinuxAgent-2.5.0.2 is running as the goal state agent [DEBUG HeartbeatCounter: 36;HeartbeatId: 55EA01D7-82B5-4170-8ACA-4C2498BADCA5;DroppedPackets: 0;UpdateGSErrors: 0;AutoUpdate: 1]
+2021-12-08T05:39:32.634448Z INFO ExtHandler ExtHandler [HEARTBEAT] Agent WALinuxAgent-2.5.0.2 is running as the goal state agent [DEBUG HeartbeatCounter: 37;HeartbeatId: 55EA01D7-82B5-4170-8ACA-4C2498BADCA5;DroppedPackets: 0;UpdateGSErrors: 0;AutoUpdate: 1]
+2021-12-08T06:07:37.505832Z INFO ExtHandler ExtHandler Checking for agent updates (family: Prod)
+2021-12-08T06:09:37.848737Z INFO ExtHandler ExtHandler [HEARTBEAT] Agent WALinuxAgent-2.5.0.2 is running as the goal state agent [DEBUG HeartbeatCounter: 38;HeartbeatId: 55EA01D7-82B5-4170-8ACA-4C2498BADCA5;DroppedPackets: 0;UpdateGSErrors: 0;AutoUpdate: 1]
+2021-12-08T06:39:42.951508Z INFO ExtHandler ExtHandler [HEARTBEAT] Agent WALinuxAgent-2.5.0.2 is running as the goal state agent [DEBUG HeartbeatCounter: 39;HeartbeatId: 55EA01D7-82B5-4170-8ACA-4C2498BADCA5;DroppedPackets: 0;UpdateGSErrors: 0;AutoUpdate: 1]
+2021-12-08T07:07:42.154634Z INFO ExtHandler ExtHandler Checking for agent updates (family: Prod)
+2021-12-08T07:09:48.566691Z INFO ExtHandler ExtHandler [HEARTBEAT] Agent WALinuxAgent-2.5.0.2 is running as the goal state agent [DEBUG HeartbeatCounter: 40;HeartbeatId: 55EA01D7-82B5-4170-8ACA-4C2498BADCA5;DroppedPackets: 0;UpdateGSErrors: 0;AutoUpdate: 1]
+2021-12-08T07:39:53.539469Z INFO ExtHandler ExtHandler [HEARTBEAT] Agent WALinuxAgent-2.5.0.2 is running as the goal state agent [DEBUG HeartbeatCounter: 41;HeartbeatId: 55EA01D7-82B5-4170-8ACA-4C2498BADCA5;DroppedPackets: 0;UpdateGSErrors: 0;AutoUpdate: 1]
+2021-12-08T08:07:46.173122Z INFO ExtHandler ExtHandler Checking for agent updates (family: Prod)
+2021-12-08T08:09:58.551631Z INFO ExtHandler ExtHandler [HEARTBEAT] Agent WALinuxAgent-2.5.0.2 is running as the goal state agent [DEBUG HeartbeatCounter: 42;HeartbeatId: 55EA01D7-82B5-4170-8ACA-4C2498BADCA5;DroppedPackets: 0;UpdateGSErrors: 0;AutoUpdate: 1]
+2021-12-08T08:40:03.592508Z INFO ExtHandler ExtHandler [HEARTBEAT] Agent WALinuxAgent-2.5.0.2 is running as the goal state agent [DEBUG HeartbeatCounter: 43;HeartbeatId: 55EA01D7-82B5-4170-8ACA-4C2498BADCA5;DroppedPackets: 0;UpdateGSErrors: 0;AutoUpdate: 1]
+2021-12-08T09:07:50.304430Z INFO ExtHandler ExtHandler Checking for agent updates (family: Prod)
+2021-12-08T09:10:09.134444Z INFO ExtHandler ExtHandler [HEARTBEAT] Agent WALinuxAgent-2.5.0.2 is running as the goal state agent [DEBUG HeartbeatCounter: 44;HeartbeatId: 55EA01D7-82B5-4170-8ACA-4C2498BADCA5;DroppedPackets: 0;UpdateGSErrors: 0;AutoUpdate: 1]
+2021-12-08T09:40:14.318102Z INFO ExtHandler ExtHandler [HEARTBEAT] Agent WALinuxAgent-2.5.0.2 is running as the goal state agent [DEBUG HeartbeatCounter: 45;HeartbeatId: 55EA01D7-82B5-4170-8ACA-4C2498BADCA5;DroppedPackets: 0;UpdateGSErrors: 0;AutoUpdate: 1]
+2021-12-08T10:07:54.860651Z INFO ExtHandler ExtHandler Checking for agent updates (family: Prod)
+2021-12-08T10:10:19.360877Z INFO ExtHandler ExtHandler [HEARTBEAT] Agent WALinuxAgent-2.5.0.2 is running as the goal state agent [DEBUG HeartbeatCounter: 46;HeartbeatId: 55EA01D7-82B5-4170-8ACA-4C2498BADCA5;DroppedPackets: 0;UpdateGSErrors: 0;AutoUpdate: 1]

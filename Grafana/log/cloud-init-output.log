@@ -1,0 +1,100 @@
+Cloud-init v. 21.4-0ubuntu1~18.04.1 running 'init-local' at Tue, 07 Dec 2021 11:06:02 +0000. Up 11.65 seconds.
+Cloud-init v. 21.4-0ubuntu1~18.04.1 running 'init' at Tue, 07 Dec 2021 11:06:07 +0000. Up 17.19 seconds.
+ci-info: +++++++++++++++++++++++++++++++++++++++Net device info+++++++++++++++++++++++++++++++++++++++
+ci-info: +--------+------+------------------------------+---------------+--------+-------------------+
+ci-info: | Device |  Up  |           Address            |      Mask     | Scope  |     Hw-Address    |
+ci-info: +--------+------+------------------------------+---------------+--------+-------------------+
+ci-info: |  eth0  | True |           10.0.0.4           | 255.255.255.0 | global | 60:45:bd:87:66:71 |
+ci-info: |  eth0  | True | fe80::6245:bdff:fe87:6671/64 |       .       |  link  | 60:45:bd:87:66:71 |
+ci-info: |   lo   | True |          127.0.0.1           |   255.0.0.0   |  host  |         .         |
+ci-info: |   lo   | True |           ::1/128            |       .       |  host  |         .         |
+ci-info: +--------+------+------------------------------+---------------+--------+-------------------+
+ci-info: ++++++++++++++++++++++++++++++Route IPv4 info+++++++++++++++++++++++++++++++
+ci-info: +-------+-----------------+----------+-----------------+-----------+-------+
+ci-info: | Route |   Destination   | Gateway  |     Genmask     | Interface | Flags |
+ci-info: +-------+-----------------+----------+-----------------+-----------+-------+
+ci-info: |   0   |     0.0.0.0     | 10.0.0.1 |     0.0.0.0     |    eth0   |   UG  |
+ci-info: |   1   |     10.0.0.0    | 0.0.0.0  |  255.255.255.0  |    eth0   |   U   |
+ci-info: |   2   |  168.63.129.16  | 10.0.0.1 | 255.255.255.255 |    eth0   |  UGH  |
+ci-info: |   3   | 169.254.169.254 | 10.0.0.1 | 255.255.255.255 |    eth0   |  UGH  |
+ci-info: +-------+-----------------+----------+-----------------+-----------+-------+
+ci-info: +++++++++++++++++++Route IPv6 info+++++++++++++++++++
+ci-info: +-------+-------------+---------+-----------+-------+
+ci-info: | Route | Destination | Gateway | Interface | Flags |
+ci-info: +-------+-------------+---------+-----------+-------+
+ci-info: |   1   |  fe80::/64  |    ::   |    eth0   |   U   |
+ci-info: |   3   |    local    |    ::   |    eth0   |   U   |
+ci-info: |   4   |  multicast  |    ::   |    eth0   |   U   |
+ci-info: +-------+-------------+---------+-----------+-------+
+Generating public/private rsa key pair.
+Your identification has been saved in /etc/ssh/ssh_host_rsa_key.
+Your public key has been saved in /etc/ssh/ssh_host_rsa_key.pub.
+The key fingerprint is:
+SHA256:qMmsEdBkBMWYDl4ujAdYUau4EpjMXT/xMPi0+o2nYD8 root@grafana-vm
+The key's randomart image is:
++---[RSA 2048]----+
+|oOBo.            |
+|*+.. ..          |
+|B.+ .o =         |
+|=Ooo. +.*        |
+|=++.  .=S.       |
+| o + o. .        |
+|o . =+           |
+|.  o. +Eo.       |
+|  .    =+.       |
++----[SHA256]-----+
+Generating public/private dsa key pair.
+Your identification has been saved in /etc/ssh/ssh_host_dsa_key.
+Your public key has been saved in /etc/ssh/ssh_host_dsa_key.pub.
+The key fingerprint is:
+SHA256:y8mVdxCwiq9ab/dCUy1gztqY/sM0G1ZcWwYMDgA+/CU root@grafana-vm
+The key's randomart image is:
++---[DSA 1024]----+
+|      ....o.oo.. |
+|     o    o+ .o o|
+|      + E+oooo + |
+|       + +o.=.o  |
+|      . S=oo...  |
+|       +++O. .   |
+|      ..*= =     |
+|     . oo *      |
+|    .....o.+.    |
++----[SHA256]-----+
+Generating public/private ecdsa key pair.
+Your identification has been saved in /etc/ssh/ssh_host_ecdsa_key.
+Your public key has been saved in /etc/ssh/ssh_host_ecdsa_key.pub.
+The key fingerprint is:
+SHA256:4TbWYP6HG5UdZrVoAcPio3RexAVbFMTxTW6w+FZJSG4 root@grafana-vm
+The key's randomart image is:
++---[ECDSA 256]---+
+|          o+OX=.o|
+|         . +=+=*+|
+|        = o..E=+=|
+|       = B .o* + |
+|      . S + o +  |
+|       + + o .   |
+|          + .    |
+|           +     |
+|          .      |
++----[SHA256]-----+
+Generating public/private ed25519 key pair.
+Your identification has been saved in /etc/ssh/ssh_host_ed25519_key.
+Your public key has been saved in /etc/ssh/ssh_host_ed25519_key.pub.
+The key fingerprint is:
+SHA256:lb8ci91GHqBAflXU28OAuxLEXAEm4JGgUMoil6KOqGk root@grafana-vm
+The key's randomart image is:
++--[ED25519 256]--+
+|.....oo.+ooo+oo. |
+|o......oo+ + .  .|
+|=oo  .  + + o o o|
+|+o       = + . +.|
+|.       S o + o .|
+|+        . = B . |
+|o.        o = +  |
+|.E           .   |
+|+                |
++----[SHA256]-----+
+Cloud-init v. 21.4-0ubuntu1~18.04.1 running 'modules:config' at Tue, 07 Dec 2021 11:06:17 +0000. Up 26.70 seconds.
+Cloud-init v. 21.4-0ubuntu1~18.04.1 running 'modules:final' at Tue, 07 Dec 2021 11:06:21 +0000. Up 30.26 seconds.
+ci-info: no authorized SSH keys fingerprints found for user devGrafanaDashboard.
+Cloud-init v. 21.4-0ubuntu1~18.04.1 finished at Tue, 07 Dec 2021 11:06:21 +0000. Datasource DataSourceAzure [seed=/dev/sr0].  Up 30.53 seconds

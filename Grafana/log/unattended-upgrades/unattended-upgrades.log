@@ -1,0 +1,14 @@
+2021-12-08 01:57:49,102 INFO Initial blacklisted packages: 
+2021-12-08 01:57:49,103 INFO Initial whitelisted packages: 
+2021-12-08 01:57:49,103 INFO Starting unattended upgrades script
+2021-12-08 01:57:49,103 INFO Allowed origins are: o=Ubuntu,a=bionic, o=Ubuntu,a=bionic-security, o=UbuntuESMApps,a=bionic-apps-security, o=UbuntuESM,a=bionic-infra-security
+2021-12-08 06:51:38,940 INFO Initial blacklisted packages: 
+2021-12-08 06:51:38,941 INFO Initial whitelisted packages: 
+2021-12-08 06:51:38,941 INFO Starting unattended upgrades script
+2021-12-08 06:51:38,941 INFO Allowed origins are: o=Ubuntu,a=bionic, o=Ubuntu,a=bionic-security, o=UbuntuESMApps,a=bionic-apps-security, o=UbuntuESM,a=bionic-infra-security
+2021-12-08 06:51:41,931 INFO Removing unused kernel packages: linux-headers-4.15.0-163
+2021-12-08 06:51:46,361 INFO Packages that were successfully auto-removed: linux-headers-4.15.0-163
+2021-12-08 06:51:46,361 INFO Packages that are kept back: 
+2021-12-08 06:51:47,049 INFO Packages that will be upgraded: busybox-initramfs busybox-static libwbclient0 python-samba samba-common samba-common-bin samba-libs
+2021-12-08 06:51:47,049 INFO Writing dpkg log to /var/log/unattended-upgrades/unattended-upgrades-dpkg.log
+2021-12-08 06:52:21,619 INFO All upgrades installed

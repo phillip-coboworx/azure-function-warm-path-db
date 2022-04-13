@@ -1,0 +1,2 @@
+update-alternatives 2021-12-02 16:10:48: run with --install /etc/cifs-utils/idmap-plugin idmap-plugin /usr/lib/x86_64-linux-gnu/cifs-utils/idmapwb.so 40 --slave /usr/share/man/man8/idmap-plugin.8.gz idmap-plugin.8.gz /usr/share/man/man8/idmapwb.8.gz
+update-alternatives 2021-12-02 16:10:48: link group idmap-plugin updated to point to /usr/lib/x86_64-linux-gnu/cifs-utils/idmapwb.so
